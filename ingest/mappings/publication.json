@@ -1,0 +1,228 @@
+{
+  "publication":{
+    "properties":{
+      "subjectArea":{
+        "properties":{
+          "name":{
+            "type":"keyword",
+            "fields":{
+              "name":{
+                "type":"text",
+                "index":"true"
+              },
+              "exact":{
+                "type":"text",
+                "index":"true"
+              }
+            }
+          },
+          "uri":{
+            "type":"text",
+            "index": "true"
+          }
+        }
+      },
+      "authors":{
+        "properties":{
+          "name":{
+            "type":"keyword",
+            "fields":{
+              "name":{
+                "type":"keyword",
+                "index":"true"
+              },
+              "exact":{
+                "type":"keyword",
+                "index":"true"
+              }
+            }
+          },
+          "uri":{
+            "type":"text",
+            "index": "true"
+          },
+          "orcid": {
+            "type": "text",
+            "index": "true"
+          },
+          "researchArea":{
+            "properties": {
+              "name": {
+                "type": "keyword",
+                "fields": {
+                  "name": {
+                    "type": "keyword",
+                    "index": "true"
+                  },
+                  "exact": {
+                    "type": "keyword",
+                    "index": "true"
+                  }
+                }
+              }
+            },
+            "uri":{
+              "type":"text",
+              "index": "true"
+            }
+          },
+          "organization":{
+            "properties": {
+              "name": {
+                "type": "keyword",
+                "fields": {
+                  "name": {
+                    "type": "keyword",
+                    "index": "true"
+                  },
+                  "exact": {
+                    "type": "keyword",
+                    "index": "true"
+                  }
+                }
+              }
+            },
+            "uri":{
+              "type":"text",
+              "index": "true"
+            }
+          }
+        }
+      },
+     "amscore":{
+        "type":"float",
+        "index": "true",
+        "null_value" : 0
+      },
+      "keywords":{
+        "type":"keyword",
+        "fields":{
+          "keywords":{
+            "type":"keyword",
+            "index":"true"
+          },
+          "exact":{
+            "type":"keyword",
+            "index":"true"
+          }
+        }
+      },
+      "publishedIn":{
+        "properties":{
+          "name":{
+            "type":"keyword",
+            "fields":{
+              "name":{
+                "type":"text",
+                "index":"true"
+              },
+              "exact":{
+                "type":"text",
+                "index":"true"
+              }
+            }
+          },
+          "type":{
+            "type":"text"
+          },
+          "uri":{
+            "type":"text",
+            "index": "true"
+          }
+        }
+      },
+      "presentedAt":{
+        "properties":{
+          "name":{
+            "type":"keyword",
+            "fields":{
+              "name":{
+                "type":"text",
+                "index":"true"
+              },
+              "exact":{
+                "type":"text",
+                "index":"true"
+              }
+            }
+          },
+          "type":{
+            "type":"text"
+          },
+          "uri":{
+            "type":"text",
+            "index": "true"
+          }
+        }
+      },
+      "publicationYear":{
+        "type":"text"
+      },
+      "mostSpecificType": {
+        "type":"text",
+        "index": "true"
+      },
+      "title":{
+        "type":"keyword",
+        "fields":{
+          "title":{
+            "type":"text",
+            "index":"true"
+          },
+          "exact":{
+            "type":"text",
+            "index":"true"
+          }
+        }
+      },
+      "type":{
+        "type":"keyword",
+        "fields":{
+          "type":{
+            "type":"text",
+            "index":"true"
+          },
+          "exact":{
+            "type":"text",
+            "index":"true"
+          }
+        }
+      },
+      "uri":{
+        "type":"text",
+        "index": "true"
+      },
+      "abstract":{
+        "type":"text"
+      },
+      "doi": {
+        "type":"text",
+        "index":"true"
+      },
+      "issue": {
+        "type":"text",
+        "index":"true"
+      },
+      "pagination": {
+        "type":"text",
+        "index":"true"
+      },
+      "beginpage": {
+        "type":"text",
+        "index":"true"
+      },
+      "endpage": {
+        "type":"text",
+        "index":"true"
+      },
+      "articlenumber": {
+        "type":"text",
+        "index":"true"
+      },
+      "fullauthlist": {
+        "type":"text",
+        "index":"true"
+      }
+    }
+  }
+}
