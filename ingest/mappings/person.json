@@ -1,0 +1,142 @@
+{
+  "person": {
+    "properties": {
+      "fisId": {
+        "type": "keyword",
+        "index": "not_analyzed"
+      },
+      "email": {
+        "type": "keyword",
+        "index": "not_analyzed"
+      },
+      "familyName": {
+        "type": "keyword"
+      },
+      "givenName": {
+        "type": "keyword"
+      },
+      "mostSpecificType": {
+        "type": "multi_field",
+        "fields": {
+          "mostSpecificType": {
+            "type": "keyword",
+            "index": "analyzed"
+          },
+          "exact": {
+            "type": "keyword",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "name": {
+        "type": "multi_field",
+        "fields": {
+          "name": {
+            "type": "keyword",
+            "index": "analyzed"
+          },
+          "exact": {
+            "type": "keyword",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "orcid": {
+        "type": "keyword",
+        "index": "not_analyzed"
+      },
+      "homeCountry": {
+        "properties": {
+          "name": {
+            "type": "multi_field",
+            "fields": {
+              "name": {
+                "type": "keyword",
+                "index": "analyzed"
+              },
+              "exact": {
+                "type": "keyword",
+                "index": "not_analyzed"
+              }
+            }
+          },
+          "uri": {
+            "type": "keyword",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "organization": {
+        "properties": {
+          "name": {
+            "type": "multi_field",
+            "fields": {
+              "name": {
+                "type": "keyword",
+                "index": "analyzed"
+              },
+              "exact": {
+                "type": "keyword",
+                "index": "not_analyzed"
+              }
+            }
+          },
+          "uri": {
+            "type": "keyword",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "portalGroups": {
+        "properties": {
+          "name": {
+            "type": "multi_field",
+            "fields": {
+              "name": {
+                "type": "keyword",
+                "index": "analyzed"
+              },
+              "exact": {
+                "type": "keyword",
+                "index": "not_analyzed"
+              }
+            }
+          },
+          "uri": {
+            "type": "keyword",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "researchArea": {
+        "properties": {
+          "name": {
+            "type": "multi_field",
+            "fields": {
+              "name": {
+                "type": "keyword",
+                "index": "analyzed"
+              },
+              "exact": {
+                "type": "keyword",
+                "index": "not_analyzed"
+              }
+            }
+          },
+          "uri": {
+            "type": "keyword",
+            "index": "not_analyzed"
+          }
+        }
+      },
+      "thumbnail": {
+        "type": "keyword",
+        "index": "no"
+      },
+      "uri": {
+        "type": "keyword",
+        "index": "not_analyzed"
+      }
+    }
+  }
+}
